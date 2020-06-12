@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        html{font-size:12px;}
+        fieldset{width:520px; margin: 0 auto;}
+        legend{font-weight:bold; font-size:14px;}
+        label{float:left; width:70px; margin-left:10px;}
+        .left{margin-left:80px;}
+        .input{width:150px;}
+        span{color: #666666;}
+    </style>
+</head>
+<body>
+    <fieldset>
+      <legend>用户注册</legend>
+      <form name="RegForm" method="post" action="reg.php" onSubmit="return InputCheck(this)">
+        <p>
+          <label for="username" class="label">用户名:</label>
+          <input id="username" name="username" type="text" class="input" />
+          <span>(必填，3-15字符长度，支持汉字、字母、数字及_)</span>
+        </p>
+        <p>
+          <label for="password" class="label">密码:</label>
+          <input id="password" name="password" type="password" class="input" />
+          <span>(必填，不得少于3位)</span>
+        </p>
+        <p>
+          <label for="address" class="address">地址:</label>
+          <input id="address" name="address" type="text" class="input" />
+          <span>(必填)</span>
+        </p>
+        <p>
+          <label for="tel" class="tel">手机号:</label>
+          <input id="tel" name="tel" type="text" class="input" />
+          <span>(必填)</span>
+        </p>
+        <p>
+          <input type="submit" name="submit" value="  提交注册  " class="left" />
+        </p> 
+      </form>
+    </fieldset>
+    
+    <script>
+      function InputCheck(RegForm)
+    {
+      if (RegForm.username.value == "")
+      {
+        alert("用户名不可为空!");
+        RegForm.username.focus();
+        return (false);
+      }
+      if (RegForm.password.value == "")
+      {
+        alert("必须设定登录密码!");
+        RegForm.password.focus();
+        return (false);
+      }
+      if (RegForm.address.value == "")
+      {
+        alert("地址不可为空!");
+        RegForm.password.focus();
+        return (false);
+      }
+      if (RegForm.tel.value == "")
+      {
+        alert("手机号不可为空!");
+        RegForm.email.focus();
+        return (false);
+      }
+    } 
+    </script>
+         
+</body>
+</html>
+
+
+
