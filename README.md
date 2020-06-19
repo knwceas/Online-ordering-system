@@ -29,3 +29,6 @@ bianji_ upload_file.php&nbsp;修改图片的编辑
 bianji_no.php &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;不修改图片的编辑    
 order_manage.php&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;订单管理    
 
+* 部分运行界面
+![Image text](https://github.com/knwceas/Online-ordering-system/blob/master/images/order.png)
+![Image text](https://github.com/knwceas/Online-ordering-system/blob/master/images/menu_manage.png)
